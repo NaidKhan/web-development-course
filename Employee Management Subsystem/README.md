@@ -1,35 +1,55 @@
+# 🌐 Web Development Course
 
-# Web Development Course
+Welcome to my Web Development Course repository!
 
-## About This Project
+This repository contains my coursework, practical exercises, assignments, and projects completed during my Web Development Course at **NUIST**.
 
-This repository contains my coursework, practical exercises, assignments, and projects completed as part of my Web Development Course at NUIST.
+The purpose of this repository is to document my learning progress, develop practical programming skills, and showcase my understanding of fundamental web development technologies.
 
-The main purpose of this repository is to document my learning journey and practise web development concepts and technologies.
+## 📌 Technologies Used
 
-## Project Objectives
+The following technologies were used throughout this course:
 
-- Learn fundamental web development concepts.
-- Practise building websites and web applications.
-- Complete course assignments and practical exercises.
-- Improve programming and problem-solving skills.
+- **HTML5** – Building and structuring web pages.
+- **CSS3** – Styling and designing web pages.
+- **JavaScript** – Adding interactivity and dynamic functionality.
 
-## Repository Contents
+## 🎯 Learning Objectives
+
+- Understand the fundamentals of web development.
+- Create structured web pages using HTML.
+- Design responsive and visually appealing interfaces using CSS.
+- Implement interactive features using JavaScript.
+- Develop practical website-building and problem-solving skills.
+
+## 📂 Repository Contents
 
 This repository includes:
+
 - Course assignments
-- Practical exercises
+- Practical coding exercises
 - Web development projects
-- Learning resources and related files
+- HTML, CSS and JavaScript practice files
 
-## Technologies
+## 🚀 How to Run the Projects
 
-Technologies and tools used throughout this course will be documented here as the projects develop.
+1. Clone or download this repository.
+2. Open the project folder on your computer.
+3. Locate the relevant HTML file (usually `index.html`).
+4. Open the HTML file in your web browser.
+5. Explore the website and its functionality.
 
-## Author
+## 👨‍💻 Author
 
 **Naid Khan**
 
-## Purpose
+Web Development Course  
+NUIST
 
-Academic coursework and personal learning.
+## 📚 Purpose
+
+This repository is maintained for academic coursework, practical learning, and tracking my progress in web development.
+
+---
+
+⭐ Thank you for visiting my repository!
