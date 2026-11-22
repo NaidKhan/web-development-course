@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Management</title>
+  <link rel="stylesheet" href="css/training.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>Employee Management</h1>
+    <nav>
+      <ul>
+        <li><a href="Dashboard.html">Dashboard</a></li>
+        <li><a href="employee-info.html">Employee Info</a></li>
+        <li><a href="attendance.html">Attendance</a></li>
+        <li><a href="salary.html">Salary</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="performance.html">Performance</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Employee Training</h1>
+      <p>Plan, manage, and evaluate employee training programs</p>
+    </div>
+  </section>
+
+ 
+  <section class="training-overview">
+    <h2>Upcoming Training Sessions</h2>
+    <div class="training-cards">
+      <div class="card">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h3>Leadership Training</h3>
+        <p>Date: 2024-12-05</p>
+        <p>Location: Conference Room A</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Technical Workshop</h3>
+        <p>Date: 2024-12-10</p>
+        <p>Location: Lab B</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-people-arrows"></i>
+        <h3>Team Building</h3>
+        <p>Date: 2024-12-15</p>
+        <p>Location: Outdoor Venue</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="charts">
+    <div class="chart-container">
+      <h2>Training Stats</h2>
+      <div class="pie-chart">
+        <canvas id="pieChart"></canvas>
+      </div>
+      <div class="bar-chart">
+        <canvas id="barChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section class="training-records">
+    <h2>Training Records</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>Name</th>
+          <th>Training Name</th>
+          <th>Date</th>
+          <th>Location</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>EMP001</td>
+          <td>Naid khan</td>
+          <td>Leadership Training</td>
+          <td>2024-12-05</td>
+          <td>Conference Room A</td>
+          <td>Passed</td>
+        </tr>
+        <tr>
+          <td>EMP002</td>
+          <td>Khattak</td>
+          <td>Technical Workshop</td>
+          <td>2024-12-10</td>
+          <td>Lab B</td>
+          <td>Excellent</td>
+        </tr>
+        <tr>
+          <td>EMP003</td>
+          <td>Ali</td>
+          <td>Team Building</td>
+          <td>2024-12-15</td>
+          <td>Outdoor Venue</td>
+          <td>Participated</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="training-buttons">
+    <button class="btn-add">Add Training</button>
+    <button class="btn-export">Export Training Report</button>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"alt="Facebook"></a >
+   
+    <a href="https://www.wechat.com/"><img src="https://pluspng.com/img-png/wechat-logo-png-wechat-logo-icon-2961.png"alt="wechat"></a >
+      <a href="https://im.qq.com/"><img src="https://logodix.com/logo/91849.png"alt="QQ logo"></a >
+        <a href="https://www.instagram.com/">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+        </a>
+  </footer>
+
+ <script src="js/training.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #f1f1f5;
+ background: url('https://chrg.compensationhr.com/wp-content/uploads/2020/10/Article-1-Pic-Salary-Ranges.jpeg')
+            no-repeat center center fixed;
+            background-size: cover;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  color: #ffab00;
+  font-weight: bold;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffab00;
+}
+
+.hero {
+  height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color:#ffab00 ;
+}
+
+
+
+
+.salary-form-section {
+  margin: 30px auto;
+  width: 80%;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(236, 105, 105, 0.1);
+  
+}
+
+.salary-form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.salary-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.salary-form label {
+  margin: 10px 0 5px;
+}
+
+.salary-form input {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.salary-form .submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.salary-form .submit-btn:hover {
+  background-color: #45a049;
+}
+
+.salary-records {
+  margin: 30px auto;
+  width: 80%;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(204, 19, 19, 0.1);
+}
+
+.salary-records h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+tr:hover {
+  background-color: rgba(223, 165, 165, 0.2)
+}
+
+.training-buttons {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.training-buttons .btn-add,
+.training-buttons .btn-export {
+  background:#4CAF50 ;
+  color: #110f0f;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 1rem;
+  transition: background 0.3s;
+}
+
+.training-buttons .btn-export:hover,
+.training-buttons .btn-view-slip:hover {
+  background: #21b926;
+}
+
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.social-icons img {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  background: #ffab00;
+  box-shadow: 0 4px 10px rgba(255, 171, 0, 0.4);
+}

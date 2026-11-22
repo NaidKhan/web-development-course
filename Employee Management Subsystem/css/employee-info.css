@@ -1,0 +1,190 @@
+ 
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+
+  background: url('https://jebgroup.com/wp-content/uploads/2023/03/DSCF9947-HDR-%E5%85%A8%E6%99%AF%E5%9B%BE-%E6%8B%B7%E8%B4%9D-1-scaled.jpg')
+
+             no-repeat center center fixed; 
+             background-size: cover; 
+               padding-top: 100px;  
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  color:  #ffab00;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar ul li a {
+  color: rgb(250, 244, 244);
+  text-decoration: none;
+}
+
+ .about-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.about-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #f9fafb;
+}
+
+.about-details {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.about-card {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.about-card p {
+  font-size: 1rem;
+  color: white;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.team-card {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  text-align: center;
+  padding: 1.5rem;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.team-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid #3b82f6; 
+}
+
+.team-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #3b82f6;
+}
+
+.team-card p {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.social-icons img {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  background: #ffab00;
+  box-shadow: 0 4px 10px rgba(255, 171, 0, 0.4);
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management</title>
+  <link rel="stylesheet" href="css/attendance.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>Employee Management</h1>
+    <nav>
+      <ul>
+        <li><a href="Dashboard.html">Dashboard</a></li>
+        <li><a href="employee-info.html">Employee Info</a></li>
+        <li><a href="attendance.html">Attendance</a></li>
+        <li><a href="salary.html">Salary</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="performance.html">Performance</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Employee Attendance</h1>
+      <p>Attendance is the first step to success</p>
+    </div>
+  </section>
+
+  <section
+  class="attendance">
+    <h2>Attendance Overview</h2>
+    <div class="attendance-summary">
+      <div class="summary-card">
+        <i class="fas fa-user-check"></i>
+        <h3>Total Present</h3>
+        <p>95</p>
+      </div>
+      <div class="summary-card">
+        <i class="fas fa-user-times"></i>
+        <h3>Total Absent</h3>
+        <p>5</p>
+      </div>
+      <div class="summary-card">
+        <i class="fas fa-clock"></i>
+        <h3>Late Arrivals</h3>
+        <p>10</p>
+      </div>
+    </div>
+
+  <section class="attendance-form">
+    <h3>Add New Attendance Record</h3>
+    <form id="attendanceForm" onsubmit="addAttendanceRecord(event)">
+      <div class="form-group">
+        <label for="attendanceEmployeeID">Employee ID:</label>
+        <input type="text" id="attendanceEmployeeID" name="attendanceEmployeeID" required>
+      </div>
+
+      <div class="form-group">
+        <label for="attendanceEmployeeName">Name:</label>
+        <input type="text" id="attendanceEmployeeName" name="attendanceEmployeeName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="attendanceDate">Date:</label>
+        <input type="date" id="attendanceDate" name="attendanceDate" required>
+      </div>
+
+      <div class="form-group">
+        <label for="attendanceStatus">Status:</label>
+        <select id="attendanceStatus" name="attendanceStatus" required>
+          <option value="Present">Present</option>
+          <option value="Late">Late</option>
+          <option value="Absent">Absent</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="attendanceClockIn">Clock-In:</label>
+        <input type="time" id="attendanceClockIn" name="attendanceClockIn">
+      </div>
+
+      <div class="form-group">
+        <label for="attendanceClockOut">Clock-Out:</label>
+        <input type="time" id="attendanceClockOut" name="attendanceClockOut">
+      </div>
+
+      <button type="submit" class="btn-submit">Add Record</button>
+    </form>
+  </section>
+
+  <section class="attendance-buttons">
+    <button class="btn-export" onclick="exportReport()">Export Report</button>
+  </section>
+
+
+<section class="attendance-record">
+  <h2>Attendance Records</h2>
+
+  <table id="attendanceTable">
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Clock-In</th>
+        <th>Clock-Out</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>EMP001</td>
+        <td>Naid khan</td>
+        <td>2024-11-25</td>
+        <td>Present</td>
+        <td>08:30 AM</td>
+        <td>05:00 PM</td>
+      </tr>
+      <tr>
+        <td>EMP002</td>
+      
+        <td>Khattak</td>
+        <td>2024-11-25</td>
+        <td>Late</td>
+        <td>09:15 AM</td>
+        <td>05:00 PM</td>
+      </tr>
+      <tr>
+        <td>EMP003</td>
+        <td>Ali</td>
+        <td>2024-11-25</td>
+        <td>Absent</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"alt="Facebook"></a >
+ 
+  <a href="https://www.wechat.com/"><img src="https://pluspng.com/img-png/wechat-logo-png-wechat-logo-icon-2961.png"alt="wechat"></a >
+    <a href="https://im.qq.com/"><img src="https://logodix.com/logo/91849.png"alt="QQ logo"></a >
+      <a href="https://www.instagram.com/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+      </a>
+</footer>
+
+<script src="js/attendance.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #0a0a0a;
+  background: url('https://as2.ftcdn.net/v2/jpg/02/87/08/17/1000_F_287081705_xgHqomCLywUqrc2m0HjO0Vs9nnqwiwwW.jpg')
+               no-repeat center center fixed;
+               background-size: cover;
+
+}
+ 
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  color: #ffab00;
+  font-weight: bold;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffab00;
+}
+
+.hero {
+  height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color:#ffab00 ;
+}
+
+
+.dashboard {
+  margin: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 2rem;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #ecf0f1;
+}
+
+.card i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: #ecf0f1;
+}
+
+.charts {
+  margin: 4rem 2rem;
+  text-align: center;
+}
+
+.chart-container {
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.evaluation-records {
+  padding: 2rem;
+}
+
+.evaluation-records table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.evaluation-records table th,
+.evaluation-records table td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #3606e2;
+}
+
+.evaluation-records table th {
+  background: #003366;
+  color: white;
+}
+
+.evaluation-records table tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.evaluation-records table tr:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.evaluation-records table tr:hover {
+  background:rgba(109, 107, 107, 0.541);
+}
+
+.feedback-section {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: #000000;
+}
+
+.feedback-section h2 {
+  margin-bottom: 2rem;
+  color: #003366;
+}
+
+.feedback-section .form-group {
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.feedback-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.feedback-section select,
+.feedback-section textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.feedback-section button {
+  background: #0d47a1;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  margin: 1rem auto 0;
+  transition: background 0.3s;
+}
+
+.feedback-section button:hover {
+  background: #003366;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.social-icons img {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  background: #ffab00;
+  box-shadow: 0 4px 10px rgba(255, 171, 0, 0.4);
+}
